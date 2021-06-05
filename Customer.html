@@ -1,0 +1,48 @@
+<!DOCTYPE html>  
+<html lang="en">  
+  <head>  
+     <title>Add Customer</title>  
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+     <script type="text/javascript" src="Script/js/jquery-1.7.1.js"></script>
+    <script type="text/javascript" src="Script/js/CustomerModule.js"></script>
+    <script type="text/javascript" src="Script/js/CustomerUIModule.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            var customer = new CustomerModule.Customer();
+            var customerUI = new CustomerUIModule.CustomerUI();
+            customerUI.LoadCustomers();
+        });
+
+    </script>  
+  </head>  
+  <body>  
+  
+<div class="container">  
+  <h1>Add Customer</h1>  
+  
+  
+<table id="customerTable" border="0" cellpadding="3">
+    <tr>
+        <th>Customer ID</th>
+        <th>Company Name</th>
+        <th>Contact Name</th>
+        <th>Country</th>
+        <th>Actions</th>
+    </tr>
+    <tr>
+      <td><input type="text" id="txtCustomerId" size="5"/></td>
+      <td><input type="text" id="txtCompanyName" /></td>
+      <td><input type="text" id="txtContactName" /></td>
+      <td><input type="text" id="txtCountry" /></td>
+      <td><input type="button" name="btnInsert" value="Insert" /></td>
+  </tr>
+</table>
+</div>  
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>  
+  </body>  
+</html>  
+
+ 
